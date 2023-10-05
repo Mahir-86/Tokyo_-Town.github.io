@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139103.jpg?w=1060&t=st=1695932281~exp=1695932881~hmac=1ec4a3301118ce595bec183d5a70838135ab81af7f0a60e488141f577939986b");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto; /* Center the container horizontally */
+            margin-bottom: 40px;
+            padding: 20px 50px 20px 40px;
+            backdrop-filter: blur(3px);
+            /* background-color: #fff; */
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        textarea {
+            resize: none; /* Remove the resize option */
+        }
+
+        input[type="tel"] {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            color: green;
+            text-align: center;
+        }
+
+    #header{
+    height: 80px;
+    margin-bottom: 3%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+
+}
+#top_menu{
+    width:50%;
+}
+#top_menu ul{
+    list-style: none;
+    display: flex;
+
+}
+#top_menu ul li{
+    width: 33%;
+}
+#top_menu ul li img{
+    position: relative;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 80%;
+    width: 22%;
+    left: 50%;
+    bottom: 19%;
+}
+#top_menu a{
+    font-size: 17px;
+    font-family:sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#top_menu ul li a:hover{
+    color: #f76d37;
+    transition-duration: 0.5s;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="top_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="top-picks.html">Top Picks</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="message">Thank you for contacting us. We will get back to you soon.</div>
+    </div>
+</body>
+</html>
